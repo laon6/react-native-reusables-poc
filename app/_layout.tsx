@@ -87,7 +87,7 @@ export default function RootLayout() {
           name='modal'
           options={{
             presentation: 'modal',
-            title: 'Modal',
+            title: 'Profile',
           }}
         />
       </Stack>

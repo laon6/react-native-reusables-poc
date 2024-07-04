@@ -3,6 +3,8 @@ import { ModalToggle } from '~/components/ModalToggle';
 import { ThemeToggle } from '~/components/ThemeToggle';
 import { LayoutPanelLeft } from '~/lib/icons/LayoutPanelLeft';
 import { MenuSquare } from '~/lib/icons/MenuSquare';
+import { ShoppingCart } from '~/lib/icons/ShoppingCart';
+import { Home } from '~/lib/icons/Home';
 
 export default function TabsLayout() {
     return (
@@ -10,9 +12,9 @@ export default function TabsLayout() {
             <Tabs.Screen
                 name='index'
                 options={{
-                    title: 'Demo',
+                    title: 'Cat Shop',
                     tabBarIcon({ color, size }) {
-                        return <LayoutPanelLeft color={color} size={size} />;
+                        return <Home color={color} size={size} />;
                     },
                     headerLeft: () => <ModalToggle />,
                     headerRight: () => <ThemeToggle />,
@@ -21,9 +23,9 @@ export default function TabsLayout() {
             <Tabs.Screen
                 name='components'
                 options={{
-                    title: 'Components',
+                    title: 'Cart',
                     tabBarIcon({ color, size }) {
-                        return <MenuSquare color={color} size={size} />;
+                        return <ShoppingCart color={color} size={size} />;
                     },
                     headerRight: () => <ThemeToggle />,
                 }}

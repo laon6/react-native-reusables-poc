@@ -1,5 +1,5 @@
 import { useScrollToTop } from '@react-navigation/native';
-// import { FlashList } from '@shopify/flash-list';
+import { FlashList } from '@shopify/flash-list';
 import { Link } from 'expo-router';
 import * as React from 'react';
 import { View } from 'react-native';
@@ -28,7 +28,7 @@ export default function ComponentsScreen() {
                     onChangeText={setSearch}
                 />
             </View>
-            {/* <FlashList
+            <FlashList
                 ref={ref}
                 data={data}
                 className='native:overflow-hidden rounded-t-lg'
@@ -51,7 +51,7 @@ export default function ComponentsScreen() {
                     </Link>
                 )}
                 ListFooterComponent={<View className='py-4' />}
-            /> */}
+            />
         </View>
     );
 }

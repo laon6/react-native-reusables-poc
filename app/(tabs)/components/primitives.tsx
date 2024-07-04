@@ -1,5 +1,5 @@
 import { useScrollToTop } from '@react-navigation/native';
-// import { FlashList } from '@shopify/flash-list';
+import { FlashList } from '@shopify/flash-list';
 import * as React from 'react';
 import { View } from 'react-native';
 import { Button } from '~/components/ui/button';
@@ -26,7 +26,7 @@ export default function PrimitivesScreen() {
                     onChangeText={setSearch}
                 />
             </View>
-            {/* <FlashList
+            <FlashList
                 ref={ref}
                 data={data}
                 className='native:overflow-hidden rounded-t-lg'
@@ -47,7 +47,7 @@ export default function PrimitivesScreen() {
                     </Button>
                 )}
                 ListFooterComponent={<View className='py-4' />}
-            /> */}
+            />
         </View>
     );
 }

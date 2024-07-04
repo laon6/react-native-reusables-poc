@@ -1,6 +1,6 @@
 
 
-export default function Screen() {
+export default function ModalScreen() {
     return (
         <></>
     );
