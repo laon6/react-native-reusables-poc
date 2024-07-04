@@ -21,11 +21,21 @@ export default function TabsLayout() {
                 }}
             />
             <Tabs.Screen
-                name='components'
+                name='cart'
                 options={{
                     title: 'Cart',
                     tabBarIcon({ color, size }) {
                         return <ShoppingCart color={color} size={size} />;
+                    },
+                    headerRight: () => <ThemeToggle />,
+                }}
+            />
+            <Tabs.Screen
+                name='components'
+                options={{
+                    title: 'Components',
+                    tabBarIcon({ color, size }) {
+                        return <MenuSquare color={color} size={size} />;
                     },
                     headerRight: () => <ThemeToggle />,
                 }}
